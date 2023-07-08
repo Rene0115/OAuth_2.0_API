@@ -1,0 +1,19 @@
+{
+  "name": "oauth_2.0_api",
+  "version": "1.0.0",
+  "description": "An api illustrating OAuth",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rene0115/OAuth_2.0_API.git"
+  },
+  "author": "Rene0115",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rene0115/OAuth_2.0_API/issues"
+  },
+  "homepage": "https://github.com/Rene0115/OAuth_2.0_API#readme"
+}
