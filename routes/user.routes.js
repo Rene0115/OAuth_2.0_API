@@ -9,6 +9,12 @@ userRouter.get(
   passport.authenticate("google", { scope: ["email", "profile"] })
 );
 
-userRouter.post("/authenticate", userController.create);
+userRouter.get(
+  "/authenticate",
+  passport.authenticate("google"),
+  async (req, res) => {
+    return res.send("done");
+  }
+);
 
 export default userRouter;
