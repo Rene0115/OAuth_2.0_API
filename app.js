@@ -2,11 +2,18 @@ import express from "express";
 import pino from "pino";
 import dotenv from "dotenv";
 import databse from "./config/db.config.js";
+import middleware from "./middleware/middleware.js";
 
 dotenv.config();
 const app = express();
 
+middleware(app);
+
 const logger = pino();
+
+app.get('/', (req,res)=>{
+    return res.send('ping')
+})
 
 const start = (port) => {
   databse();
